@@ -7,8 +7,8 @@ model = joblib.load("models/diabetes_model.pkl")
 scaler = joblib.load("models/scaler.pkl")
 
 # Streamlit app title and description
-st.set_page_config(page_title="Diabetes Prediction App", page_icon="🧠")
-st.title("🧠 **Diabetes Prediction App**")
+st.set_page_config(page_title="Diabetes Prediction App")
+st.title(" **Diabetes Prediction App**")
 st.write("### Predict whether a person has diabetes based on their health data.")
 st.write("Please enter the following details:")
 
@@ -43,11 +43,11 @@ if st.button("**Predict**"):
 
     result = "Diabetic" if prediction[0] == 1 else "Not Diabetic"
     
-    # Stylish results display
+    # results display
     if prediction[0] == 1:
-        st.markdown(f"<h2 style='color:red;'>🔴 Prediction: {result}</h2>", unsafe_allow_html=True)
+        st.markdown(f"<h2 style='color:red;'> Prediction: {result}</h2>", unsafe_allow_html=True)
     else:
-        st.markdown(f"<h2 style='color:green;'>✅ Prediction: {result}</h2>", unsafe_allow_html=True)
+        st.markdown(f"<h2 style='color:green;'> Prediction: {result}</h2>", unsafe_allow_html=True)
     
     st.write("### Thank you for using the Diabetes Prediction App!")
     st.write("For a more accurate result, please consult with a medical professional.")

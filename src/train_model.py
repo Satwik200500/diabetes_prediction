@@ -37,7 +37,7 @@ try:
     joblib.dump(scaler, os.path.join(models_path, "scaler.pkl"))  # Save the scaler
 
 except Exception as e:
-    print("❌ ERROR:", e)
+    print(" ERROR:", e)
 
 
 
