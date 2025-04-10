@@ -25,7 +25,7 @@ st.markdown("""
 - **Age**: Age of the person (years).
 """)
 
-# Create input fields with a bit of styling and explanations
+# Create input fields 
 preg = st.number_input("**Pregnancies**", min_value=0, max_value=20, step=1, help="Enter the number of times the person has been pregnant.")
 glucose = st.number_input("**Glucose**", min_value=0, max_value=200, step=1, help="Enter the glucose concentration in mg/dl.")
 bp = st.number_input("**Blood Pressure**", min_value=0, max_value=200, step=1, help="Enter the blood pressure in mm Hg.")
