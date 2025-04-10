@@ -17,7 +17,7 @@ st.markdown("""
 ### Parameters:
 - **Pregnancies**: Number of times the person has been pregnant.
 - **Glucose**: Glucose concentration in the blood (mg/dl).
-- **Blood Pressure**: Blood pressure value (mm Hg).
+- **Blood Pressure**: Diastolic Blood pressure value (mm Hg).
 - **Skin Thickness**: Skin fold thickness (mm).
 - **Insulin**: Insulin level in the blood (µU/ml).
 - **BMI**: Body Mass Index (kg/m²).
@@ -28,7 +28,7 @@ st.markdown("""
 # Create input fields 
 preg = st.number_input("**Pregnancies**", min_value=0, max_value=20, step=1, help="Enter the number of times the person has been pregnant.")
 glucose = st.number_input("**Glucose**", min_value=0, max_value=200, step=1, help="Enter the glucose concentration in mg/dl.")
-bp = st.number_input("**Blood Pressure**", min_value=0, max_value=200, step=1, help="Enter the blood pressure in mm Hg.")
+bp = st.number_input("**Blood Pressure**", min_value=0, max_value=200, step=1, help="Enter the Diastolic blood pressure in mm Hg.")
 skin = st.number_input("**Skin Thickness**", min_value=0, max_value=100, step=1, help="Enter the skin fold thickness in mm.")
 insulin = st.number_input("**Insulin**", min_value=0, max_value=500, step=1, help="Enter the insulin level in µU/ml.")
 bmi = st.number_input("**BMI**", min_value=0.0, max_value=100.0, step=0.1, help="Enter the Body Mass Index (kg/m²).")
