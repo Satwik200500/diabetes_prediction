@@ -7,7 +7,7 @@ model = joblib.load("models/diabetes_model.pkl")
 scaler = joblib.load("models/scaler.pkl")
 
 # Streamlit app title and description
-st.set_page_config(page_title="Diabetes Prediction App")
+st.set_page_config(page_title="Diabetes Prediction App",  page_icon=None)
 st.title(" **Diabetes Prediction App**")
 st.write("### Predict whether a person has diabetes based on their health data.")
 st.write("Please enter the following details:")
