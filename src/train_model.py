@@ -10,6 +10,12 @@ import os
 try:
     # Load the dataset
     df = pd.read_csv('data/diabetes.csv')  # Ensure the path is correct
+    
+    # Replace invalid zeros with median values
+    cols_with_zero = ['Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI']
+    for col in cols_with_zero:
+     df[col] = df[col].replace(0, df[col].median())
+
 
     # Prepare the data
     X = df.drop('Outcome', axis=1)  # Features: All columns except 'Outcome'
@@ -25,7 +31,7 @@ try:
     )
 
     # Train the model using Logistic Regression
-    model = LogisticRegression()  # Initialize the logistic regression model
+    model = LogisticRegression(class_weight='balanced', random_state=42)# Initialize logistic regression
     model.fit(X_train, y_train)  # Fit the model to the training data
 
     # Check and create the 'models' directory to save the model and scaler
@@ -38,6 +44,10 @@ try:
 
 except Exception as e:
     print(" ERROR:", e)
+
+
+
+
 
 
 
