@@ -17,6 +17,7 @@ try:
      df[col] = df[col].replace(0, df[col].median())
 
 
+
     # Prepare the data
     X = df.drop('Outcome', axis=1)  # Features: All columns except 'Outcome'
     y = df['Outcome']  # Target variable: 'Outcome' (Diabetic or not)
