@@ -31,7 +31,7 @@ try:
     )
 
     # Train the model using Logistic Regression
-    model = LogisticRegression(class_weight='balanced', random_state=42)# Initialize logistic regression
+    model = LogisticRegression()  # Initialize the logistic regression model
     model.fit(X_train, y_train)  # Fit the model to the training data
 
     # Check and create the 'models' directory to save the model and scaler
