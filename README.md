@@ -39,6 +39,8 @@ The dataset used is the [Pima Indians Diabetes Dataset](https://www.kaggle.com/d
   - Confusion Matrix
   - ROC Curve & AUC
   - Classification Report (Precision, Recall, F1-score,source)
+  - Correlation Heatmap
+
 
 **Model Files:**
 - `models/diabetes_model.pkl` – Trained machine learning model
