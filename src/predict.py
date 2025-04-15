@@ -10,7 +10,7 @@ scaler = joblib.load("models/scaler.pkl")
 columns = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness',
            'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
 
-# Sample input (update values as needed)
+# Sample input 
 sample_data = pd.DataFrame([[6,148,72,35,0,33.6,0.627,50]], columns=columns)
 
 # Scale and predict
